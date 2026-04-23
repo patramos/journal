@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* -----------------------------------------------------------
+   Theme variables — switched by the `.dark` class on <html>
+   ----------------------------------------------------------- */
+:root {
+  --bg: #f8f4ec;
+  --ink: #4a4947;
+  --ink-soft: rgba(0, 0, 0, 0.6);
+  --ink-muted: rgba(0, 0, 0, 0.4);
+  --ink-faint: rgba(0, 0, 0, 0.3);
+  --chip-border: #868584;
+  --chip-active-bg: #ffebcb;
+  --chip-active-text: #434241;
+  --paper-fill: #ffebcb;
+  --paper-shadow-edge: #e8d6b9;
+  --paper-shadow-deep: #b5a790;
+  --btn-solid-bg: #4a4947;
+  --btn-solid-text: #ffffff;
+  --btn-circle-border: #4a4947;
+  --btn-circle-text: #4a4947;
+  --toggle-bg: #ffefd5;
+  --toggle-border: #ffebcb;
+  --toggle-handle: #e8d6b9;
+  --toggle-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.2);
+  --noise-blend: color-burn;
+  --noise-opacity: 0.28;
+}
+
+.dark {
+  --bg: #1f1f1e;
+  --ink: rgba(255, 255, 255, 0.88);
+  --ink-soft: rgba(255, 255, 255, 0.7);
+  --ink-muted: rgba(255, 255, 255, 0.55);
+  --ink-faint: rgba(255, 255, 255, 0.3);
+  --chip-border: rgba(255, 255, 255, 0.55);
+  --chip-active-bg: #4a4947;
+  --chip-active-text: rgba(255, 255, 255, 0.95);
+  --paper-fill: #f4c64f;
+  --paper-shadow-edge: #deb448;
+  --paper-shadow-deep: #b08a2a;
+  --btn-solid-bg: #4a4947;
+  --btn-solid-text: #ffffff;
+  --btn-circle-border: rgba(255, 255, 255, 0.7);
+  --btn-circle-text: rgba(255, 255, 255, 0.9);
+  --toggle-bg: #6e6d6c;
+  --toggle-border: #6e6d6c;
+  --toggle-handle: #acabaa;
+  --toggle-shadow: 0 4px 40px 0 rgba(255, 255, 255, 0.12);
+  --noise-blend: soft-light;
+  --noise-opacity: 0.35;
+}
+
+html,
+body {
+  background: var(--bg);
+  color: var(--ink);
+  min-height: 100vh;
+  transition: background-color 500ms ease, color 500ms ease;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* -----------------------------------------------------------
+   Noise texture overlay (generated via SVG turbulence)
+   ----------------------------------------------------------- */
+.noise-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  mix-blend-mode: var(--noise-blend);
+  opacity: var(--noise-opacity);
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.85 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  background-size: 240px 240px;
+  z-index: 0;
+}
+
+/* -----------------------------------------------------------
+   Swipe card helpers
+   ----------------------------------------------------------- */
+.card-swipe {
+  touch-action: pan-y;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.no-transition {
+  transition: none !important;
+}
+
+/* Utility: reduced motion respect */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
