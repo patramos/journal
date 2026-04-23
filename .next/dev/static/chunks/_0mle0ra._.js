@@ -282,7 +282,7 @@ function Button({ variant = "solid", size = "lg", children, onClick, disabled = 
         }, this);
     }
     // solid
-    const sizeClasses = size === "lg" ? "px-8 py-4 text-[40px]" : "px-6 py-3 text-[32px]";
+    const sizeClasses = size === "lg" ? "px-6 py-3 text-[26px] sm:px-8 sm:py-4 sm:text-[40px]" : "px-5 py-3 text-[22px] sm:px-6 sm:text-[32px]";
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
         type: "button",
         onClick: onClick,
@@ -1109,12 +1109,12 @@ function Toggle() {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                 "aria-hidden": true,
                 className: [
-                    "absolute top-[3px] h-6 w-6 rounded-full",
+                    "absolute left-[3px] top-[3px] h-6 w-6 rounded-full",
                     "transition-transform duration-500 ease-[cubic-bezier(0.2,0.8,0.2,1)]",
                     isDark ? "bg-stone-200 opacity-80" : "bg-sand-600"
                 ].join(" "),
                 style: {
-                    transform: isDark ? "translateX(4px)" : "translateX(36px)"
+                    transform: isDark ? "translateX(0)" : "translateX(36px)"
                 }
             }, void 0, false, {
                 fileName: "[project]/app/components/Toggle.jsx",

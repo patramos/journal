@@ -51,12 +51,12 @@ export default function Toggle() {
       <span
         aria-hidden
         className={[
-          "absolute top-[3px] h-6 w-6 rounded-full",
+          "absolute left-[3px] top-[3px] h-6 w-6 rounded-full",
           "transition-transform duration-500 ease-[cubic-bezier(0.2,0.8,0.2,1)]",
           isDark ? "bg-stone-200 opacity-80" : "bg-sand-600",
         ].join(" ")}
         style={{
-          transform: isDark ? "translateX(4px)" : "translateX(36px)",
+          transform: isDark ? "translateX(0)" : "translateX(36px)",
         }}
       />
     </button>

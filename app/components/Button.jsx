@@ -41,9 +41,9 @@ export default function Button({
 
   // solid
   const sizeClasses =
-    size === "lg"
-      ? "px-8 py-4 text-[40px]"
-      : "px-6 py-3 text-[32px]";
+  size === "lg"
+    ? "px-6 py-3 text-[26px] sm:px-8 sm:py-4 sm:text-[40px]"
+    : "px-5 py-3 text-[22px] sm:px-6 sm:text-[32px]";
 
   return (
     <button
