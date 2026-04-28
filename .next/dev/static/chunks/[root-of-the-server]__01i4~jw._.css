@@ -859,8 +859,24 @@ img, video {
   font-size: clamp(28px, 5.6vw, 56px);
 }
 
+.text-\[18px\] {
+  font-size: 18px;
+}
+
+.text-\[24px\] {
+  font-size: 24px;
+}
+
+.text-\[20px\] {
+  font-size: 20px;
+}
+
 .font-semibold {
   font-weight: 600;
+}
+
+.font-medium {
+  font-weight: 500;
 }
 
 .uppercase {

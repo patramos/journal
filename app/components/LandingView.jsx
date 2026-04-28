@@ -29,7 +29,7 @@ export default function LandingView({ onGenerate }) {
         {/* ---------------- Left column ---------------- */}
         <div className="flex flex-col gap-12 md:gap-14">
           <h1 className="font-serif text-[72px] leading-[0.95] tracking-tight md:text-[96px] lg:text-[120px]">
-            Generate a journal prompt<span className="italic text-[var(--ink-soft)]">.</span>
+            The Daily Prompt<span className="italic text-[var(--ink-soft)]">.</span>
           </h1>
 
           {/* Section: I'm feeling... */}
