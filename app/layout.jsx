@@ -18,9 +18,9 @@ const instrumentSans = Instrument_Sans({
 });
 
 export const metadata = {
-  title: "Journal — A Prompt Generator",
+  title: "Journal Prompt Generator",
   description:
-    "A calming, moody journal prompt generator. Pick a feeling, pull a prompt.",
+    "Choose your mood and let the prompt come to you.",
 };
 
 // Inline script runs before hydration to set the correct theme class and

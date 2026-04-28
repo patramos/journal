@@ -120,8 +120,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$ThemePr
 ;
 ;
 const metadata = {
-    title: "Journal — A Prompt Generator",
-    description: "A calming, moody journal prompt generator. Pick a feeling, pull a prompt."
+    title: "Journal Prompt Generator",
+    description: "Choose your mood and let the prompt come to you."
 };
 // Inline script runs before hydration to set the correct theme class and
 // avoid a flash of the wrong color scheme.
