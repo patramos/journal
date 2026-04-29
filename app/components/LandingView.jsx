@@ -27,13 +27,18 @@ export default function LandingView({ onGenerate }) {
     <section className="relative z-10 mx-auto w-full max-w-[1280px] px-6 py-16 sm:px-10 sm:py-20 md:pt-48 md:pb-28">  
       <div className="grid grid-cols-1 gap-16 md:grid-cols-2 md:gap-20 lg:gap-32 xl:gap-40">
         {/* ---------------- Left column ---------------- */}
-        <div className="flex flex-col gap-12 md:gap-14">
-          <h1 className="font-serif text-[72px] leading-[0.95] tracking-tight md:text-[96px] lg:text-[120px]">
-            The Daily Prompt<span className="italic text-[var(--ink-soft)]">.</span>
-          </h1>
+        <div className="flex flex-col gap-10 md:gap-12">
+          <div className="flex flex-col gap-6">
+            <h1 className="font-serif text-[72px] leading-[0.95] tracking-tight md:text-[96px] lg:text-[120px]">
+              The Daily Prompt<span className="italic text-[var(--ink-soft)]">.</span>
+            </h1>
+            <p className="font-sans font-medium text-[16px] md:text-[20px] leading-snug text-[var(--ink-soft)] max-w-md">
+              Choose a mood and let the perfect journal prompt come to you . ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁.
+            </p>
+          </div>
 
           {/* Section: I'm feeling... */}
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-4">
             <p className="font-sans text-[14px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-muted)]">
               I&rsquo;m feeling&hellip;
             </p>

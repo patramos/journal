@@ -417,6 +417,10 @@ img, video {
   max-width: 88%;
 }
 
+.max-w-md {
+  max-width: 28rem;
+}
+
 .shrink {
   flex-shrink: 1;
 }
@@ -540,6 +544,18 @@ img, video {
 
 .gap-6 {
   gap: 1.5rem;
+}
+
+.gap-10 {
+  gap: 2.5rem;
+}
+
+.gap-2 {
+  gap: .5rem;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .overflow-hidden {
@@ -705,16 +721,8 @@ img, video {
   font-size: clamp(28px, 5.6vw, 56px);
 }
 
-.text-\[18px\] {
-  font-size: 18px;
-}
-
-.text-\[24px\] {
-  font-size: 24px;
-}
-
-.text-\[20px\] {
-  font-size: 20px;
+.text-\[16px\] {
+  font-size: 16px;
 }
 
 .font-semibold {
@@ -747,6 +755,10 @@ img, video {
 
 .leading-none {
   line-height: 1;
+}
+
+.leading-snug {
+  line-height: 1.375;
 }
 
 .tracking-\[0\.02em\] {
@@ -910,6 +922,10 @@ img, video {
 
 .duration-\[380ms\] {
   transition-duration: .38s;
+}
+
+.duration-\[800ms\] {
+  transition-duration: .8s;
 }
 
 .ease-\[cubic-bezier\(0\.2\,0\.8\,0\.2\,1\)\] {
@@ -1167,6 +1183,10 @@ html, body {
     gap: 5rem;
   }
 
+  .md\:gap-12 {
+    gap: 3rem;
+  }
+
   .md\:pb-24 {
     padding-bottom: 6rem;
   }
@@ -1185,6 +1205,10 @@ html, body {
 
   .md\:text-\[96px\] {
     font-size: 96px;
+  }
+
+  .md\:text-\[20px\] {
+    font-size: 20px;
   }
 }
 

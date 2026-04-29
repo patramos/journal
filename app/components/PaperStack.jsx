@@ -18,7 +18,7 @@ import Paper from "./Paper";
  * they can be tweaked in one place.
  */
 const SWIPE_THRESHOLD = 120; // px the user must drag past to trigger a swipe
-const EXIT_DURATION = 380; // ms — must match the .swipe-exit transition
+const EXIT_DURATION = 800; // ms — must match the .swipe-exit transition
 
 const PaperStack = forwardRef(function PaperStack(
   { interactive = false, onSwipe, children },
@@ -68,10 +68,11 @@ const PaperStack = forwardRef(function PaperStack(
       const sign = direction === "right" ? 1 : -1;
       // Make sure the transition is enabled before assigning the exit transform.
       node.classList.remove("no-transition");
-      node.style.transform = `translate3d(${sign * 120}vw, 0, 0) rotate(${
-        sign * 30
+      node.style.transform = `translate3d(${
+        sign * 140
+      }vw, -40px, 0) rotate(${
+        sign * 18
       }deg)`;
-
       const handleEnd = () => {
         node.removeEventListener("transitionend", handleEnd);
         // Snap back instantly — the parent will swap the prompt content and
@@ -192,7 +193,7 @@ const PaperStack = forwardRef(function PaperStack(
           className={[
             "absolute inset-0 origin-center",
             "card-swipe", // see globals.css
-            "transition-transform duration-[380ms] ease-[cubic-bezier(0.22,1,0.36,1)]",
+            "transition-transform duration-[800ms] ease-[cubic-bezier(0.22,1,0.36,1)]",
             interactive ? "cursor-grab active:cursor-grabbing" : "",
           ].join(" ")}
           style={{ transform: "translate3d(0,0,0) rotate(0deg)" }}

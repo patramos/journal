@@ -464,7 +464,7 @@ var _s = __turbopack_context__.k.signature();
  * Drag thresholds and animation timings are kept in module-scope constants so
  * they can be tweaked in one place.
  */ const SWIPE_THRESHOLD = 120; // px the user must drag past to trigger a swipe
-const EXIT_DURATION = 380; // ms — must match the .swipe-exit transition
+const EXIT_DURATION = 800; // ms — must match the .swipe-exit transition
 const PaperStack = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["forwardRef"])(_c = _s(function PaperStack({ interactive = false, onSwipe, children }, ref) {
     _s();
     const cardRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
@@ -511,7 +511,7 @@ const PaperStack = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$proje
             const sign = direction === "right" ? 1 : -1;
             // Make sure the transition is enabled before assigning the exit transform.
             node.classList.remove("no-transition");
-            node.style.transform = `translate3d(${sign * 120}vw, 0, 0) rotate(${sign * 30}deg)`;
+            node.style.transform = `translate3d(${sign * 140}vw, -40px, 0) rotate(${sign * 18}deg)`;
             const handleEnd = {
                 "PaperStack.PaperStack.useCallback[triggerExit].handleEnd": ()=>{
                     node.removeEventListener("transitionend", handleEnd);
@@ -618,12 +618,12 @@ const PaperStack = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$proje
                         className: "h-full w-full opacity-90"
                     }, void 0, false, {
                         fileName: "[project]/app/components/PaperStack.jsx",
-                        lineNumber: 174,
+                        lineNumber: 175,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/components/PaperStack.jsx",
-                    lineNumber: 170,
+                    lineNumber: 171,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -633,12 +633,12 @@ const PaperStack = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$proje
                         className: "h-full w-full"
                     }, void 0, false, {
                         fileName: "[project]/app/components/PaperStack.jsx",
-                        lineNumber: 182,
+                        lineNumber: 183,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/components/PaperStack.jsx",
-                    lineNumber: 178,
+                    lineNumber: 179,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -650,7 +650,7 @@ const PaperStack = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$proje
                     className: [
                         "absolute inset-0 origin-center",
                         "card-swipe",
-                        "transition-transform duration-[380ms] ease-[cubic-bezier(0.22,1,0.36,1)]",
+                        "transition-transform duration-[800ms] ease-[cubic-bezier(0.22,1,0.36,1)]",
                         interactive ? "cursor-grab active:cursor-grabbing" : ""
                     ].join(" "),
                     style: {
@@ -663,28 +663,28 @@ const PaperStack = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$proje
                             children: children
                         }, void 0, false, {
                             fileName: "[project]/app/components/PaperStack.jsx",
-                            lineNumber: 201,
+                            lineNumber: 202,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/components/PaperStack.jsx",
-                        lineNumber: 200,
+                        lineNumber: 201,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/components/PaperStack.jsx",
-                    lineNumber: 186,
+                    lineNumber: 187,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/components/PaperStack.jsx",
-            lineNumber: 168,
+            lineNumber: 169,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/components/PaperStack.jsx",
-        lineNumber: 167,
+        lineNumber: 168,
         columnNumber: 5
     }, this);
 }, "0GBsJrpQj88UTz8JzQfWwJTkQis=")), "0GBsJrpQj88UTz8JzQfWwJTkQis=");
@@ -731,19 +731,36 @@ function LandingView({ onGenerate }) {
             className: "grid grid-cols-1 gap-16 md:grid-cols-2 md:gap-20 lg:gap-32 xl:gap-40",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "flex flex-col gap-12 md:gap-14",
+                    className: "flex flex-col gap-10 md:gap-12",
                     children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                            className: "font-serif text-[72px] leading-[0.95] tracking-tight md:text-[96px] lg:text-[120px]",
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "flex flex-col gap-6",
                             children: [
-                                "The Daily Prompt",
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "italic text-[var(--ink-soft)]",
-                                    children: "."
-                                }, void 0, false, {
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                    className: "font-serif text-[72px] leading-[0.95] tracking-tight md:text-[96px] lg:text-[120px]",
+                                    children: [
+                                        "The Daily Prompt",
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "italic text-[var(--ink-soft)]",
+                                            children: "."
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/components/LandingView.jsx",
+                                            lineNumber: 33,
+                                            columnNumber: 31
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
                                     fileName: "[project]/app/components/LandingView.jsx",
                                     lineNumber: 32,
-                                    columnNumber: 29
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "font-sans font-medium text-[16px] md:text-[20px] leading-snug text-[var(--ink-soft)] max-w-md",
+                                    children: "Choose a mood and let the perfect journal prompt come to you . ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁."
+                                }, void 0, false, {
+                                    fileName: "[project]/app/components/LandingView.jsx",
+                                    lineNumber: 35,
+                                    columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
@@ -752,14 +769,14 @@ function LandingView({ onGenerate }) {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex flex-col gap-5",
+                            className: "flex flex-col gap-4",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: "font-sans text-[14px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-muted)]",
                                     children: "I’m feeling…"
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/LandingView.jsx",
-                                    lineNumber: 37,
+                                    lineNumber: 42,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -770,18 +787,18 @@ function LandingView({ onGenerate }) {
                                             onClick: ()=>setActiveMood(m.id)
                                         }, m.id, false, {
                                             fileName: "[project]/app/components/LandingView.jsx",
-                                            lineNumber: 42,
+                                            lineNumber: 47,
                                             columnNumber: 17
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/LandingView.jsx",
-                                    lineNumber: 40,
+                                    lineNumber: 45,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/components/LandingView.jsx",
-                            lineNumber: 36,
+                            lineNumber: 41,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -792,7 +809,7 @@ function LandingView({ onGenerate }) {
                                     children: "Not feeling anything particular?"
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/LandingView.jsx",
-                                    lineNumber: 54,
+                                    lineNumber: 59,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -804,18 +821,18 @@ function LandingView({ onGenerate }) {
                                         variant: "gradient"
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/LandingView.jsx",
-                                        lineNumber: 58,
+                                        lineNumber: 63,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/LandingView.jsx",
-                                    lineNumber: 57,
+                                    lineNumber: 62,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/components/LandingView.jsx",
-                            lineNumber: 53,
+                            lineNumber: 58,
                             columnNumber: 11
                         }, this)
                     ]
@@ -837,17 +854,17 @@ function LandingView({ onGenerate }) {
                             children: "Give me a prompt"
                         }, void 0, false, {
                             fileName: "[project]/app/components/LandingView.jsx",
-                            lineNumber: 71,
+                            lineNumber: 76,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/components/LandingView.jsx",
-                        lineNumber: 70,
+                        lineNumber: 75,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/components/LandingView.jsx",
-                    lineNumber: 69,
+                    lineNumber: 74,
                     columnNumber: 9
                 }, this)
             ]
