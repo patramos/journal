@@ -775,6 +775,10 @@ img, video {
   font-size: clamp(28px, 5.6vw, 56px);
 }
 
+.text-\[10px\] {
+  font-size: 10px;
+}
+
 .font-medium {
   font-weight: 500;
 }
@@ -1146,6 +1150,10 @@ html, body {
 }
 
 @media (min-width: 640px) {
+  .sm\:fixed {
+    position: fixed;
+  }
+
   .sm\:right-8 {
     right: 2rem;
   }
@@ -1221,6 +1229,10 @@ html, body {
 
   .sm\:text-\[40px\] {
     font-size: 40px;
+  }
+
+  .sm\:text-\[12px\] {
+    font-size: 12px;
   }
 }
 

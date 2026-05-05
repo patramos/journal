@@ -1274,7 +1274,7 @@ function Page() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
-                className: "fixed bottom-4 left-1/2 z-20 -translate-x-1/2 whitespace-nowrap pt-2 font-sans text-[12px] font-medium uppercase tracking-[0.14em] text-[var(--ink)] opacity-50",
+                className: "absolute bottom-4 left-1/2 z-20 -translate-x-1/2 whitespace-nowrap pt-3 font-sans text-[10px] font-medium uppercase tracking-[0.14em] text-[var(--ink)] opacity-50 sm:fixed sm:text-[12px]",
                 children: "made by pat ramos ⊹ . ⟡ . ⊹ just for fun"
             }, void 0, false, {
                 fileName: "[project]/app/page.jsx",
