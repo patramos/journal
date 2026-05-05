@@ -24,7 +24,7 @@ export default function LandingView({ onGenerate }) {
   };
 
   return (
-    <section className="relative z-10 mx-auto w-full max-w-[1280px] px-6 py-16 sm:px-10 sm:py-20 md:pt-48 md:pb-28">  
+    <section className="relative z-10 mx-auto w-full max-w-[1280px] px-6 pt-32 pb-32 sm:px-10 sm:pt-40 sm:pb-36 md:pt-48 md:pb-40">  
       <div className="grid grid-cols-1 gap-16 md:grid-cols-2 md:gap-20 lg:gap-32 xl:gap-40">
         {/* ---------------- Left column ---------------- */}
         <div className="flex flex-col gap-10 md:gap-12">

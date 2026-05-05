@@ -104,7 +104,7 @@ export default function PromptView({
       </div>
 
       {/* Back to home */}
-      <div className="mt-16 sm:mt-20 md:mt-24">
+      <div className="mt-8 sm:mt-10 md:mt-12">
         <Button
           variant="solid"
           size="md"

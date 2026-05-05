@@ -726,7 +726,7 @@ function LandingView({ onGenerate }) {
         onGenerate(activeMood);
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "relative z-10 mx-auto w-full max-w-[1280px] px-6 py-16 sm:px-10 sm:py-20 md:pt-48 md:pb-28",
+        className: "relative z-10 mx-auto w-full max-w-[1280px] px-6 pt-32 pb-32 sm:px-10 sm:pt-40 sm:pb-36 md:pt-48 md:pb-40",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "grid grid-cols-1 gap-16 md:grid-cols-2 md:gap-20 lg:gap-32 xl:gap-40",
             children: [
@@ -1031,7 +1031,7 @@ function PromptView({ moodId, prompt, onNext, onPrev, onHome, canGoBack }) {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "mt-16 sm:mt-20 md:mt-24",
+                className: "mt-8 sm:mt-10 md:mt-12",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Button$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                     variant: "solid",
                     size: "md",
@@ -1376,6 +1376,14 @@ function Page() {
             }, void 0, false, {
                 fileName: "[project]/app/page.jsx",
                 lineNumber: 91,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
+                className: "fixed bottom-4 left-1/2 z-20 -translate-x-1/2 whitespace-nowrap font-sans text-[12px] font-medium uppercase tracking-[0.14em] text-[var(--ink)] opacity-50",
+                children: "made by pat ramos ⊹ . ⟡ . ⊹ just for fun"
+            }, void 0, false, {
+                fileName: "[project]/app/page.jsx",
+                lineNumber: 112,
                 columnNumber: 7
             }, this)
         ]
