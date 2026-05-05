@@ -108,10 +108,6 @@ export default function Page() {
           />
         )}
       </div>
-
-      <footer className="absolute bottom-4 left-1/2 z-20 -translate-x-1/2 whitespace-nowrap pt-3 font-sans text-[10px] font-medium uppercase tracking-[0.14em] text-[var(--ink)] opacity-50 sm:fixed sm:text-[12px]">
-        made by pat ramos ⊹ . ⟡ . ⊹ just for fun
-      </footer>
     </main>
   );
 }
