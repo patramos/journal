@@ -875,7 +875,7 @@ function LandingView({ onGenerate }) {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
-                className: "mt-16 w-full whitespace-nowrap text-center font-sans text-[10px] font-medium uppercase tracking-[0.14em] text-[var(--ink)] opacity-50 sm:mt-20 sm:text-[12px]",
+                className: "mt-16 w-full whitespace-nowrap text-center font-sans text-[10px] font-medium uppercase tracking-[0.14em] text-[var(--ink)] opacity-50 sm:hidden",
                 children: "made by pat ramos ⊹ . ⟡ . ⊹ just for fun"
             }, void 0, false, {
                 fileName: "[project]/app/components/LandingView.jsx",
@@ -1059,7 +1059,7 @@ function PromptView({ moodId, prompt, onNext, onPrev, onHome, canGoBack }) {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
-                className: "mt-16 w-full whitespace-nowrap text-center font-sans text-[10px] font-medium uppercase tracking-[0.14em] text-[var(--ink)] opacity-50 sm:mt-20 sm:text-[12px]",
+                className: "mt-16 w-full whitespace-nowrap text-center font-sans text-[10px] font-medium uppercase tracking-[0.14em] text-[var(--ink)] opacity-50 sm:hidden",
                 children: "made by pat ramos ⊹ . ⟡ . ⊹ just for fun"
             }, void 0, false, {
                 fileName: "[project]/app/components/PromptView.jsx",
@@ -1394,6 +1394,14 @@ function Page() {
             }, void 0, false, {
                 fileName: "[project]/app/page.jsx",
                 lineNumber: 91,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
+                className: "hidden sm:block fixed bottom-4 left-1/2 z-20 -translate-x-1/2 whitespace-nowrap pt-3 font-sans text-[12px] font-medium uppercase tracking-[0.14em] text-[var(--ink)] opacity-50",
+                children: "made by pat ramos ⊹ . ⟡ . ⊹ just for fun"
+            }, void 0, false, {
+                fileName: "[project]/app/page.jsx",
+                lineNumber: 112,
                 columnNumber: 7
             }, this)
         ]

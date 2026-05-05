@@ -85,7 +85,7 @@ export default function LandingView({ onGenerate }) {
           </PaperStack>
         </div>
       </div>
-      <footer className="mt-16 w-full whitespace-nowrap text-center font-sans text-[10px] font-medium uppercase tracking-[0.14em] text-[var(--ink)] opacity-50 sm:mt-20 sm:text-[12px]">
+      <footer className="mt-16 w-full whitespace-nowrap text-center font-sans text-[10px] font-medium uppercase tracking-[0.14em] text-[var(--ink)] opacity-50 sm:hidden">
         made by pat ramos ⊹ . ⟡ . ⊹ just for fun
       </footer>
     </section>
