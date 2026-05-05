@@ -25,7 +25,7 @@ export default function LandingView({ onGenerate }) {
 
   return (
     <section className="relative z-10 mx-auto w-full max-w-[1280px] px-6 pt-32 pb-32 sm:px-10 sm:pt-40 sm:pb-36 md:pt-48 md:pb-40">  
-      <div className="grid grid-cols-1 gap-16 md:grid-cols-2 md:gap-20 lg:gap-32 xl:gap-40">
+      <div className="grid grid-cols-1 gap-24 md:grid-cols-2 md:gap-20 lg:gap-32 xl:gap-40">
         {/* ---------------- Left column ---------------- */}
         <div className="flex flex-col gap-10 md:gap-12">
           <div className="flex flex-col gap-6">
@@ -85,7 +85,7 @@ export default function LandingView({ onGenerate }) {
           </PaperStack>
         </div>
       </div>
-      <footer className="mt-16 w-full whitespace-nowrap text-center font-sans text-[10px] font-medium uppercase tracking-[0.14em] text-[var(--ink)] opacity-50 sm:hidden">
+      <footer className="mt-32 w-full whitespace-nowrap text-center font-sans text-[10px] font-medium uppercase tracking-[0.14em] text-[var(--ink)] opacity-50 sm:hidden">
         made by pat ramos ⊹ . ⟡ . ⊹ just for fun
       </footer>
     </section>
