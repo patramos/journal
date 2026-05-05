@@ -61,7 +61,7 @@ export default function PromptView({
   const headline = MOOD_HEADLINES[moodId] ?? MOOD_HEADLINES.random;
 
   return (
-    <section className="relative z-10 mx-auto flex w-full max-w-[760px] flex-col items-center px-6 pt-28 pb-16 sm:pt-32 sm:pb-20 md:pt-36 md:pb-24">
+    <section className="relative z-10 mx-auto flex w-full max-w-[760px] flex-col items-center px-6 pt-28 pb-24 sm:pt-32 sm:pb-20 md:pt-36 md:pb-24">
       {/* Mood headline */}
       <p className="text-center font-sans text-[14px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-muted)]">
         {headline}

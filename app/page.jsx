@@ -109,7 +109,7 @@ export default function Page() {
         )}
       </div>
 
-      <footer className="fixed bottom-4 left-1/2 z-20 -translate-x-1/2 whitespace-nowrap font-sans text-[12px] font-medium uppercase tracking-[0.14em] text-[var(--ink)] opacity-50">
+      <footer className="fixed bottom-4 left-1/2 z-20 -translate-x-1/2 whitespace-nowrap pt-2 font-sans text-[12px] font-medium uppercase tracking-[0.14em] text-[var(--ink)] opacity-50">
         made by pat ramos ⊹ . ⟡ . ⊹ just for fun
       </footer>
     </main>
