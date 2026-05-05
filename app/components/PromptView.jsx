@@ -63,7 +63,7 @@ export default function PromptView({
   return (
     <section className="relative z-10 mx-auto flex w-full max-w-[760px] flex-col items-center px-6 pt-28 pb-24 sm:pt-32 sm:pb-20 md:pt-36 md:pb-24">
       {/* Mood headline */}
-      <p className="text-center font-sans text-[14px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-muted)]">
+      <p className="text-center font-sans text-[12px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-muted)] sm:text-[14px]">
         {headline}
       </p>
 
@@ -90,7 +90,7 @@ export default function PromptView({
           <ArrowLeft size={28} weight="regular" />
         </Button>
 
-        <p className="max-w-[280px] text-center font-sans text-[12px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-muted)]">
+        <p className="max-w-[280px] text-center font-sans text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-muted)] sm:text-[12px]">
           Swipe or use the buttons to switch prompts
         </p>
 

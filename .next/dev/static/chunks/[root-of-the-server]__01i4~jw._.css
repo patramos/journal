@@ -1416,6 +1416,10 @@ html, body {
   .sm\:text-\[12px\] {
     font-size: 12px;
   }
+
+  .sm\:text-\[14px\] {
+    font-size: 14px;
+  }
 }
 
 @media (min-width: 768px) {

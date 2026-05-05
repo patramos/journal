@@ -957,7 +957,7 @@ function PromptView({ moodId, prompt, onNext, onPrev, onHome, canGoBack }) {
         className: "relative z-10 mx-auto flex w-full max-w-[760px] flex-col items-center px-6 pt-28 pb-24 sm:pt-32 sm:pb-20 md:pt-36 md:pb-24",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                className: "text-center font-sans text-[14px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-muted)]",
+                className: "text-center font-sans text-[12px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-muted)] sm:text-[14px]",
                 children: headline
             }, void 0, false, {
                 fileName: "[project]/app/components/PromptView.jsx",
@@ -1010,7 +1010,7 @@ function PromptView({ moodId, prompt, onNext, onPrev, onHome, canGoBack }) {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "max-w-[280px] text-center font-sans text-[12px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-muted)]",
+                        className: "max-w-[280px] text-center font-sans text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-muted)] sm:text-[12px]",
                         children: "Swipe or use the buttons to switch prompts"
                     }, void 0, false, {
                         fileName: "[project]/app/components/PromptView.jsx",
